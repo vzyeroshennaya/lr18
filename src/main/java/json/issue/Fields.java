@@ -1,8 +1,6 @@
 package json.issue;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import json.issue.Pojo;
-import json.issue.Project;
 
 public class Fields implements Pojo {
 

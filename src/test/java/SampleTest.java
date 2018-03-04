@@ -4,6 +4,9 @@ import json.issue.Fields;
 import json.issue.Issue;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.IOException;
+
 public class SampleTest {
 
     @Test
@@ -21,6 +24,11 @@ public class SampleTest {
         String jsonInString = "";
         try {
             jsonInString = mapper.writeValueAsString(issue);
+            try {
+                mapper.writeValue(new File("/Users/macbook/Documents/Hillel/pojo_jackson_sample/test.json"), issue);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
