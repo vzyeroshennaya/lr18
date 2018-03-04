@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 
-public class SampleTest {
+public class PojoSampleTest {
 
     @Test
     public void sampleTest() {
