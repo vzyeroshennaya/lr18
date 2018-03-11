@@ -9,6 +9,7 @@ public class Fields implements Pojo {
     @JsonProperty("issuetype")
     public IssueType issueType;
     public Assignee assignee;
+    public Description description;
 
     public Fields() {
     }
@@ -30,6 +31,11 @@ public class Fields implements Pojo {
 
     public Fields setAssignee(String assignee) {
         this.assignee = new Assignee(assignee);
+        return this;
+    }
+
+    public Fields setDescription(String description) {
+        this.description = new Description(description);
         return this;
     }
 

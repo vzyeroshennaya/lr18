@@ -18,6 +18,7 @@ public class PojoSampleTest {
         fields.setIssueType("Story");
         fields.setProject("QAAUT-325");
         fields.setSummary("Summary for sad story");
+        fields.setDescription("Smth that describe our story");
 
         Issue issue = new Issue(fields);
 
